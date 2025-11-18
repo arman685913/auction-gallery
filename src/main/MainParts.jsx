@@ -1,11 +1,11 @@
 import React from 'react';
 import Mainpart from './Mainpart';
 
-const MainParts = ({mainParts}) => {
+const MainParts = ({mainParts, handleHeartBtn}) => {
     return (
         <div>
             {
-                mainParts.map(mainPart=><Mainpart key={mainPart.id} mainPart={mainPart}></Mainpart>)
+                mainParts.map(mainPart=><Mainpart handleHeartBtn={handleHeartBtn} key={mainPart.id} mainPart={mainPart}></Mainpart>)
             }
         </div>
     );

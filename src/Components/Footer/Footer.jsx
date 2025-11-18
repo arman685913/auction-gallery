@@ -3,10 +3,10 @@ import React from 'react';
 const Footer = () => {
     return (
         <div>
-            <footer className="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-16">
+            <footer className="footer sm:footer-horizontal footer-center bg-base-300 text-base-content md:p-16 p-12">
               <aside>
                 <a className="text-xl md:text-2xl text-[#003EA4]">Auction <span className="font-bold text-[#FFD337]">Gallery</span></a>
-                <div className='flex gap-2 text-xl'>
+                <div className='flex gap-2 md:text-xl text-lg'>
                     <p>Bid.</p>
                     <p>Win.</p>
                     <p>Own.</p>
@@ -19,7 +19,7 @@ const Footer = () => {
                       <li><a>How to works</a></li>
                     </ul>
                 </div>
-                <p className='md:text-lg'>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
+                <p className='md:text-lg text-sm italic'>Copyright © {new Date().getFullYear()} - All right reserved by <br className='md:hidden' />  <span className='strong text-gray-700 font-semibold'>Auction Gallery.</span></p>
               </aside>
             </footer>
         </div>
