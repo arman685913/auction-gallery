@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "title": "Vintage Leica M3 Camera 1965",
+    "description": "A classic Leica M3 rangefinder camera from 1965, fully functional.",
+    "currentBidPrice": 1000,
+    "timeLeft": "2 Days left",
+    "bidsCount": 12,
+    "image": "https://i.ibb.co.com/bgg5vRwp/Bid1-min.png"
+  },
+  {
+    "id": 2,
+    "title": "Gibson SG Standard Electric Guitar",
+    "description": "Iconic Gibson SG Standard electric guitar, perfect for collectors and players.",
+    "currentBidPrice": 2000,
+    "timeLeft": "3 Days left",
+    "bidsCount": 8,
+    "image": "https://i.ibb.co.com/nqgrzN5s/Bid2-min.png"
+  },
+  {
+    "id": 3,
+    "title": "Original Apple Macintosh 128K (1984)",
+    "description": "The very first Apple Macintosh 128K, a historic piece of computing history.",
+    "currentBidPrice": 3000,
+    "timeLeft": "1 Day left",
+    "bidsCount": 5,
+    "image": "https://i.ibb.co.com/SXDN8Km6/Bid3-min.png"
+  },
+  {
+    "id": 4,
+    "title": "Rolex Submariner 16610",
+    "description": "Luxury Rolex Submariner 16610, stainless steel, excellent condition.",
+    "currentBidPrice": 4000,
+    "timeLeft": "4 Days left",
+    "bidsCount": 9,
+    "image": "https://i.ibb.co.com/N6dhWChZ/Bid4-min.png"
+  },
+  {
+    "id": 5,
+    "title": "First Edition 'The Great Gatsby' by F. Scott Fitzgerald",
+    "description": "A rare first edition of 'The Great Gatsby', in good condition.",
+    "currentBidPrice": 5000,
+    "timeLeft": "5 Days left",
+    "bidsCount": 7,
+    "image": "https://i.ibb.co.com/Lz9MC0hD/Bid6-min.png"
+  },
+  {
+    "id": 6,
+    "title": "Mid-Century Modern Eames Lounge Chair",
+    "description": "Authentic Eames Lounge Chair from the mid-century modern era, very stylish.",
+    "currentBidPrice": 6000,
+    "timeLeft": "2 Days left",
+    "bidsCount": 10,
+    "image": "https://i.ibb.co.com/R4d1qMZt/Bid5-min.png"
+  },
+  {
+    "id": 7,
+    "title": "Banksy Original Screen Print",
+    "description": "A genuine screen print by the world-famous street artist Banksy.",
+    "currentBidPrice": 7000,
+    "timeLeft": "3 Days left",
+    "bidsCount": 6,
+    "image": "https://i.ibb.co.com/nN6Cr2Lq/Bid7-min.png"
+  }
+]

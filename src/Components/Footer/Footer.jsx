@@ -5,7 +5,7 @@ const Footer = () => {
         <div>
             <footer className="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-16">
               <aside>
-                <a className="text-2xl text-[#003EA4]">Auction <span className="font-bold text-[#FFD337]">Gallery</span></a>
+                <a className="text-xl md:text-2xl text-[#003EA4]">Auction <span className="font-bold text-[#FFD337]">Gallery</span></a>
                 <div className='flex gap-2 text-xl'>
                     <p>Bid.</p>
                     <p>Win.</p>

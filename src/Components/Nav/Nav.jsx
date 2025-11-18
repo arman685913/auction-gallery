@@ -5,7 +5,7 @@ const Nav = () => {
         <div>
             <div className="navbar bg-base-100 shadow-sm px-8">
               <div className="navbar-start">
-                <a className="text-2xl text-[#003EA4]">Auction <span className="font-bold text-[#FFD337]">Gallery</span></a>
+                <a className="md:text-2xl text-xl text-[#003EA4]">Auction <span className="font-bold text-[#FFD337]">Gallery</span></a>
               </div>
               <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
