@@ -1,6 +1,7 @@
 import React from 'react';
+import Item from './Item';
 
-const Cart = () => {
+const Cart = ({mainParts , removeBtn,total}) => {
     return (
         <div>
             <div className='flex items-center justify-center md:py-8 py-4 border-b border-gray-200 gap-1'> 
@@ -9,13 +10,18 @@ const Cart = () => {
                 </svg>
                 <h1 className='md:text-4xl font-medium'><span className='hidden md:inline'>Favorite</span> Items</h1>
             </div>
-            <div className=' md:py-12 py-6 text-center border-b border-gray-200 gap-2.5'>
+            <div id='yet' className=' md:pt-12 pt-6 text-center gap-2.5'>
                 <h1 className='md:text-3xl font-medium italic text-sm'>No favorites yet</h1>
                 <p className='text-gray-500 md:px-4 px-1 italic md:pt-6 pt-3 md:text-xl text-xs'>Click the heart icon on any item to add it to your favorites</p>
             </div>
+            <div id='notyet' className='md:py-6 py-3 border-b border-gray-200 px-2 '>               
+                {
+                    mainParts.map(mainPart => <Item removeBtn={removeBtn} key={mainPart.id} mainPart={mainPart}></Item>)
+                }
+            </div>
             <div className='md:px-4 flex items-center md:py-8 py-4 flex-col md:flex-row justify-between md:text-left text-center'>
-                <h1 className='md:text-3xl text-sm'>Total bids Amount :</h1>
-                <h1 className='md:text-3xl italic text-sm'>$0000</h1>
+                <h1 className='md:text-2xl text-sm'>Total bids Amount :</h1>
+                <h1 className='md:text-2xl italic text-sm'>${total}</h1>
             </div>
         </div>
     );

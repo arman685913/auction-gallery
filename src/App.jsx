@@ -15,11 +15,16 @@ function App() {
   useEffect(()=> {
       fetch('data.json').then(res => res.json()).then(data=>setMainParts(data))
   },[]);
-//toast
+
+
+//toast 
 const notify = () => toast(<div className="flex items-center gap-3">
         <img className="w-[20px] h-[20px]" src="https://as2.ftcdn.net/v2/jpg/00/88/59/17/1000_F_88591703_XcsbAg9gpqccIGJI4C52FJr42saKzZVN.jpg" alt="icon" />
         <span className="text-lg">Item Added to Your Favorite List</span>
       </div>)
+
+// math
+const [total , setTotal] = useState(0)
 
 const handleHeartBtn = (mainPart) => {
   //btnToggle
@@ -28,8 +33,33 @@ const handleHeartBtn = (mainPart) => {
   const heartSvg = document.getElementById(`heartSvg${mainPart.id}`)
   heartSvg.setAttribute('fill','red');
   //toast
-  notify()
+  notify();
+  //math
+  setTotal(total + mainPart.currentBidPrice);
 
+//favorite part
+  const yet = document.getElementById('yet')
+  yet.classList.add('hidden')
+  const itemId = document.getElementById(`itemId${mainPart.id}`)
+  itemId.classList.remove('hidden')
+}
+
+const notify3 = () => toast(<div className="flex items-center gap-3">
+        <img className="w-[20px] h-[20px]" src="https://as2.ftcdn.net/v2/jpg/00/88/59/17/1000_F_88591703_XcsbAg9gpqccIGJI4C52FJr42saKzZVN.jpg" alt="icon" />
+        <span className="text-lg">Item Remove from Favorite List</span>
+      </div>)
+
+const removeBtn = (mainPart) => {
+  const itemId = document.getElementById(`itemId${mainPart.id}`)
+  itemId.classList.add('hidden')
+  notify3()
+  //math
+  setTotal(total - mainPart.currentBidPrice)
+  //btnToggle
+  const heartBtn = document.getElementById(`heartBtn${mainPart.id}`)
+  heartBtn.removeAttribute('disabled',true);
+  const heartSvg = document.getElementById(`heartSvg${mainPart.id}`)
+  heartSvg.removeAttribute('fill','red');
 }
 
 // scroll
@@ -72,7 +102,7 @@ const handleHeartBtn = (mainPart) => {
                 <MainParts handleHeartBtn={handleHeartBtn} mainParts={mainParts} ></MainParts>
             </div>
             <div className="w-[30%] border-gray-300 border bg-white rounded-2xl dark:text-white dark:bg-black">
-                <Cart></Cart>
+                <Cart total={total} mainParts={mainParts} removeBtn={removeBtn}></Cart>
             </div>
           </div>
           </div>
