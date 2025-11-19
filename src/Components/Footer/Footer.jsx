@@ -19,7 +19,7 @@ const Footer = () => {
                       <li><a>How to works</a></li>
                     </ul>
                 </div>
-                <p className='md:text-lg text-sm italic'>Copyright © {new Date().getFullYear()} - All right reserved by <br className='md:hidden' />  <span className='strong text-gray-700 font-semibold'>Auction Gallery.</span></p>
+                <p className='md:text-lg text-sm italic'>Copyright © {new Date().getFullYear()} - All right reserved by <br className='md:hidden' />  <span className='strong text-gray-900 dark:text-yellow-400 font-semibold'>Auction Gallery.</span></p>
               </aside>
             </footer>
         </div>

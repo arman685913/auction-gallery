@@ -48,14 +48,14 @@ const handleHeartBtn = (mainPart) => {
         <Nav></Nav>
         <Banner scrollToSection={scrollToSection}></Banner>
         <div ref={sectionRef} 
-        className='bg-blue-50 md:px-20 md:py-24 px-4 py-8'>
-        <h1 className='text-3xl font-semibold mb-2'>Active Auctions</h1>
-        <p className='text-lg mb-4'>Discover and bid on extraordinary items</p>
-          <div className="flex md:gap-5 gap-2.5">
+        className='bg-blue-50 dark:bg-gray-800 md:px-20 md:py-24 px-3 py-8'>
+        <h1 className='text-3xl text-blue-800 font-semibold mb-2'>Active Auctions</h1>
+        <p className='dark:text-gray-300 text-gray-600 md:text-xl text-lg mb-4'>Discover and bid on extraordinary items</p>
+          <div className="flex md:gap-5 gap-2">
 
-          <div  className="w-[70%] text-sm md:text-lg bg-white rounded-2xl p-2">
+          <div  className="w-[70%] text-sm md:text-lg bg-white border-gray-300 border dark:text-white dark:bg-black rounded-2xl p-2">
           <table className="w-full">     
-            <thead className="text-gray-700">
+            <thead className="text-gray-700 dark:text-white">
               <tr className="border-b border-gray-200">
                 <th colSpan={2} className="md:w-[220px] md:pl-6 pl-3 py-3 text-left align-middle">Items</th>
                 <th className="py-3 md:w-[190px] align-middle ">
@@ -71,7 +71,7 @@ const handleHeartBtn = (mainPart) => {
         </table>
                 <MainParts handleHeartBtn={handleHeartBtn} mainParts={mainParts} ></MainParts>
             </div>
-            <div className="w-[30%] bg-white rounded-3xl">
+            <div className="w-[30%] border-gray-300 border bg-white rounded-2xl dark:text-white dark:bg-black">
                 <Cart></Cart>
             </div>
           </div>

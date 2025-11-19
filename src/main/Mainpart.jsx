@@ -6,9 +6,9 @@ const Mainpart = ({mainPart ,handleHeartBtn}) => {
     return (
         <div>
             <table className="w-full">
-            <tbody className="text-gray-700">
+            <tbody className="text-gray-700 dark:text-gray-300">
                 
-            <tr className="border-b border-gray-200 hover:bg-gray-50">
+            <tr className="border-b border-gray-200 hover:bg-gray-600">
               <td className="md:pl-4 pl-2 py-4 md:w-[82px] md:h-[70px]">
                     <div className=''>
                       <img className='md:w-[82px] md:h-[70px] w-[60px] h-[50px]' src={mainPart.image} alt="" />
