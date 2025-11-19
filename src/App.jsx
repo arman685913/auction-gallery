@@ -80,7 +80,7 @@ const removeBtn = (mainPart) => {
         <div ref={sectionRef} 
         className='bg-blue-50 dark:bg-gray-800 md:px-20 md:py-24 px-3 py-8'>
         <h1 className='text-3xl text-blue-800 font-semibold mb-2'>Active Auctions</h1>
-        <p className='dark:text-gray-300 text-gray-600 md:text-xl text-lg mb-4'>Discover and bid on extraordinary items</p>
+        <p className='dark:text-gray-300 text-gray-600 md:text-xl text-lg mb-4'>Discover & bid on extraordinary items</p>
           <div className="flex md:gap-5 gap-2">
 
           <div  className="w-[70%] text-sm md:text-lg bg-white border-gray-300 border dark:text-white dark:bg-black rounded-2xl p-2">
