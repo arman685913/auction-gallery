@@ -1,7 +1,7 @@
 # Auction Gallery
 
 A modern web application for showcasing and bidding on auction items.\
-Live Demo: **http://auction-gallery.surge.sh/**
+Live Demo: **https://modern-cake.surge.sh/**
 
 ## Table of Contents
 
